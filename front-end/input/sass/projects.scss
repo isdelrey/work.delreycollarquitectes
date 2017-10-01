@@ -1,5 +1,13 @@
 main {
   .project {
+    padding-right:15px;
+    margin-bottom:20px;
+    &:nth-child(5n),&:nth-child(1) {
+      padding-left:0;
+    }
+    &:nth-child(4n) {
+      padding-right:0;
+    }
     .image {
       height: 200px;
       background-repeat: no-repeat;
@@ -8,16 +16,10 @@ main {
     }
     .description {
       margin: 15px 0 0 0;
-      font-size:14px;
-      .right {
-        float:right;
-      }
-      .label {
+      font-size:12px;
+      div:nth-child(2) {
+        margin-left:15px;
         color:#999;
-        display: block;
-      }
-      .arquitectes {
-          display: block;
       }
     }
   }

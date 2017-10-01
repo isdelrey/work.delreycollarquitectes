@@ -22,15 +22,6 @@ gulp.task('css', function(){
     }));
 });
 
-
-gulp.task('vueify', function () {
-  gulp.src('./input/components/*.js')
-    .pipe(browserify({ transform: [ [{_flags: {debug: true}}, 'vueify'], 'babelify', 'aliasify'] }))
-    .pipe(tap(function(file, t) {
-      console.log("vueify  Compiled: " + path.basename(file.path));
-    }))
-    .pipe(gulp.dest('./output/js/components'));
-});
 gulp.task('jade', function() {
   gulp.src('./input/*.jade')
     .pipe(jade({
@@ -40,6 +31,11 @@ gulp.task('jade', function() {
       console.log("jade    Compiled: " + path.basename(file.path));
     }))
     .pipe(gulp.dest('./output'));
+
+});
+gulp.task('js', function() {
+  gulp.src('./input/js/*.js')
+    .pipe(gulp.dest('./output/js'));
 
 });
 gulp.task('webserver', function() {
@@ -53,8 +49,7 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('default', [ 'vueify', 'css', 'jade', 'webserver' ]);
+gulp.task('default', [ 'css', 'js', 'jade', 'webserver' ]);
 gulp.watch('./input/sass/*.scss', ['css']);
 gulp.watch('./input/*.jade', ['jade']);
-gulp.watch("./input/components/*.js", ['vueify']);
-gulp.watch("./input/components/*.vue", ['vueify']);
+gulp.watch('./input/js/*.js', ['js']);

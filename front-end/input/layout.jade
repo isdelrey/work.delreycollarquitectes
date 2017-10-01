@@ -4,80 +4,82 @@ html
     link(href='css/layout.css', rel='stylesheet', type='text/css')
     block head
   body
-    .container.u-full-width.u-max-full-width.tk-acumin-pro
-      header.row
-        .row
-          .name.six.columns
-            h1 elvira del rey carles coll
-            h2 arquitectura
-          .lang.six.columns
-            .select.u-pull-right languages / idiomas
-
-            ul.u-pull-right
-              li.active castellano
-
-              li català
-
-              li english
-        nav.row
-          ul
-            li.four.marginless.columns
-              a(href='') equipo
-
-              ul
-                li
-                  a(href='') Elvira del Rey
-
-                li
-                  a(href='') Carles Coll
-
-            li.four.marginless.columns
-              a(href='') proyectos
-
-              ul
-                li
-                  a(href='') edificación
-
-                li
-                  a(href='') reforma y rehabilitación
-
-                li
-                  a(href='') no residenciales
-
-            li.four.marginless.columns
-              a(href='') colaboradores
-
-              ul
-                li
-                  a(href='') aparejadores
-
-                li
-                  a(href='') calculistas e ingenieros
-
-            li.four.marginless.columns
-              a(href='') contacto
-              ul
-                li
-                  a 93 451 35 36
-
-                li
-                  a dc@delreycollarquitectes.org
-      main.row
-        block content
-      footer.row
-        .three.columns
+    header
+      .row
+        .name.col-lg-7.start-lg
           h1 elvira del rey carles coll
+            span  arquitectura
+        .lang.col-lg-5.end-lg
+          ul
+            li.active castellano
 
-          h2 arquitectes
+            li català
 
-        .three.columns
-          span carrer bruc 88 , 5&ordm; 8&ordf; barcelona
-          span 93 451 35 36
+            li english
+      nav
+        ul.row
+          li.col-lg-3
+            a(href='') Equipo
 
-        .three.columns
-          a e.del.rey@coac.cat
-          a ccoll@coac.cat
+            ul
+              li
+                a(href='') Elvira del Rey
 
-        .three.columns
-          span &copy; ivo sequeros del rey
+              li
+                a(href='') Carles Coll
+
+          li.col-lg-3
+            a(href='') Proyectos
+
+            ul
+              li
+                a(href='') Edificación
+
+              li
+                a(href='') Reforma y Rehabilitación
+
+              li
+                a(href='') No residenciales
+
+          li.col-lg-3
+            a(href='') Colaboradores
+
+            ul
+              li
+                a(href='') Aparejadores
+
+              li
+                a(href='') Calculistas e Ingenieros
+
+          li.col-lg-3
+            a(href='') Contacto
+            ul
+              li
+                a(href="tel:934513536") 93 451 35 36
+              li
+                a(href="mailto:contacte@delreycoll.org") contacte@delreycoll.org
+              li
+                a(href="https://goo.gl/maps/jk2XoBMqvTF2",target="_blank") carrer bruc 88, 8º 3ª, barcelona
+
+    main
+      div.title.col-lg-12
+        block title
+      section.row.between-lg
+        block content
+    footer.row
+      .three.columns
+        h1 elvira del rey carles coll
+
+        h2 arquitectes
+
+      .three.columns
+        span carrer bruc 88 , 5&ordm; 8&ordf; barcelona
+        span 93 451 35 36
+
+      .three.columns
+        a e.del.rey@coac.cat
+        a ccoll@coac.cat
+
+      .three.columns
+        span &copy; ivo sequeros del rey
   block end

@@ -1,5 +1,87 @@
-extends layout
-block content
-  component-photos
-block end
-  script(src='js/components/photos.js', type='text/javascript')
+html
+  head
+    meta(charset='utf-8')
+    link(href='css/layout.css', rel='stylesheet', type='text/css')
+    block head
+  body
+    header
+      .row
+        .name.col-lg-7.start-lg
+          h1 elvira del rey carles coll
+            span  arquitectura
+        .lang.col-lg-5.end-lg
+          ul
+            li.active castellano
+
+            li català
+
+            li english
+      div.pre-header
+        img(src="img-test/02.png")
+      nav.home
+        ul.row
+          li.col-lg-3
+            a(href='') Equipo
+
+            ul
+              li
+                a(href='') Elvira del Rey
+
+              li
+                a(href='') Carles Coll
+
+          li.col-lg-3
+            a(href='') Proyectos
+
+            ul
+              li
+                a(href='') Edificación
+
+              li
+                a(href='') Reforma y Rehabilitación
+
+              li
+                a(href='') No residenciales
+
+          li.col-lg-3
+            a(href='') Colaboradores
+
+            ul
+              li
+                a(href='') Aparejadores
+
+              li
+                a(href='') Calculistas e Ingenieros
+
+          li.col-lg-3
+            a(href='') Contacto
+            ul
+              li
+                a(href="tel:934513536") 93 451 35 36
+              li
+                a(href="mailto:contacte@delreycoll.org") contacte@delreycoll.org
+              li
+                a(href="https://goo.gl/maps/jk2XoBMqvTF2",target="_blank") carrer bruc 88, 8º 3ª, barcelona
+
+    main
+      div.title.col-lg-12
+        block title
+      section.row.between-lg
+        block content
+    footer.row
+      .three.columns
+        h1 elvira del rey carles coll
+
+        h2 arquitectes
+
+      .three.columns
+        span carrer bruc 88 , 5&ordm; 8&ordf; barcelona
+        span 93 451 35 36
+
+      .three.columns
+        a e.del.rey@coac.cat
+        a ccoll@coac.cat
+
+      .three.columns
+        span &copy; ivo sequeros del rey
+  block end

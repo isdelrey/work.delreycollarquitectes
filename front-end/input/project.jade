@@ -1,0 +1,32 @@
+extends layout
+block head
+  link(href='css/project.css', rel='stylesheet', type='text/css')
+  script(type='text/javascript',src='js/skrollr.min.js')
+block content
+  div.col-lg-8
+    img(src="img-test/01.jpg")
+    img(src="img-test/03.jpg")
+  aside(data-50="margin-top:-10px;" data-150="margin-top:-60px;")
+    div.com(data-150="opacity:0;" data-200="opacity:1;")
+      h1 elvira del rey &nbsp;carles coll
+        div  arquitectura
+    div.options
+      div.option
+        span  ⟵
+        | Ant.
+      div.option
+        span  ◆
+        | Proyectos
+      div.option
+        span  ⟶
+        | Sig.
+    div.category PROYECTO DE RESTAURACIÓN
+    div.title Casa Cortacans
+    div.arquitectes
+      div.label arquitectes
+      div Elvira del Rey
+      div Carles Coll
+    div.description Lorem ipsum dolor sit amet, nulla doctus torquatos no qui, ad debet voluptatum sadipscing sit. Quo ei putent sadipscing appellantur, ei nibh ceteros tractatos mea. No adhuc sonet deseruisse duo, id iusto partiendo facilisis nec. Sea autem qualisque ex, an nulla blandit efficiendi vel, at error quidam laboramus vel. Clita voluptatum disputando sea eu. Et primis habemus disputando mei, at est ferri graeco accusam. Ex has dico meis dicunt, mei ea forensibus reprimique, qualisque repudiare complectitur mea et.
+    script(type="text/javascript") var s = skrollr.init();
+
+block end
