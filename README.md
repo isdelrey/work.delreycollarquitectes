@@ -1,5 +1,5 @@
 # work.delreycollarquitectes
 
-** delreycollarquitectes.org **
+### delreycollarquitectes.org
 
 Website being built using SASS + NodeJS + React
