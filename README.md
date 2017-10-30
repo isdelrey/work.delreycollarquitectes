@@ -1,5 +1,5 @@
 # work.delreycollarquitectes
 
-### delreycollarquitectes.org
+### New website to be deployed for delreycollarquitectes
 
-Website being built using SASS + NodeJS + React
+Built using SASS + NodeJS + React
